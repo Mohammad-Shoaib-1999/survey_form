@@ -1,0 +1,144 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Apply custom styles */
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  background-color: gainsboro;
+  color:black;
+}
+
+.container {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 0.6rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#title {
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0.6rem;
+}
+
+#description {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.3rem;
+  margin: 1rem;
+}
+
+#survey-form {
+  /* background-color: darkblue; */
+  background-color: #fff;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 60px 40px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#creator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Style for form sections */
+.section {
+  margin-bottom: 20px;
+}
+
+/* Style for form rows */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 15px; */
+  text-align: left;
+  margin-bottom: 25px;
+}
+/* form-group */
+/* Style for input-data */
+.input-data {
+  width: 48%; /* Adjust as needed */
+}
+
+/* Style for labels */
+.input-data label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style for text inputs */
+.input-data input[type="text"],
+.input-data input[type="email"],
+.input-data input[type="number"],
+.input-data textarea,
+.input-data select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-data input[type="radio"]{
+  display: inline-block;
+            width: auto;
+}
+
+
+/* Style for checkboxes and radio buttons */
+.input-data input[type="checkbox"],
+.input-data input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Style for textarea */
+.input-data textarea {
+  resize: vertical;
+}
+
+/* Style for submit button */
+.submit-btn {
+  text-align: center;
+}
+
+.input-data button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  display: block;
+  width: 100%;
+
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ 
+}
+
+.input-data button:hover {
+  background-color: #2980b9;
+}
+
+/* Media query for responsive design */
+@media (max-width: 700px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .input-data {
+    width: 100%;
+  }
+}
